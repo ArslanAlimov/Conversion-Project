@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="conversion.js"></script>
+    <link rel="stylesheet" href="conversion.css" type="text/css">
+</head>
+
+<body>
+    <table class="container">
+        <tr>
+            <td colspan="2" align="center">
+                <div>
+                    <label for="numconv">Temperature units to convert</label>
+                    <input type="number" id="numconv" name="numconv">
+                    <select name="unit" id="unit">
+                        <option value="F">Fahrenheit</option>
+                        <option value="C">Celsius</option>
+                    </select>
+                    <button type="button" name="Tconv" id="Tconv" onclick="Tconvert()">Convert</button>
+                </div>
+            </td>
+        </tr>
+        <tr>
+            <td colspan="2" align="center">
+                <div>
+                    <label for="distconv">Distance units to convert</label>
+                    <input type="number" id="distconv" name="distconv">
+                    <select name="distunit" id="distunit">
+                        <option value="M">Miles</option>
+                        <option value="KM">Kilometres</option>
+                    </select>
+                    <button type="button" name="Dconv" id="Dconv" onclick="Dconvert()">Convert</button>
+                </div>
+            </td>
+        </tr>
+        <tr>
+            <td colspan="2" align="center">
+                <div>
+                    <label for="volconv">Volume units to convert</label>
+                    <input type="number" id="volconv" name="volconv">
+                    <select name="volunit" id="volunit">
+                        <option value="G">Gallons</option>
+                        <option value="L">Litres</option>
+                    </select>
+                    <button type="button" name="Vconv" id="Vconv" onclick="Vconvert()">Convert</button>
+                </div>
+            </td>
+        </tr>
+        <tr>
+            <td colspan="2" align="center">
+                <p id="result" name="result">
+                    Result:
+                </p>
+            </td>
+        </tr>
+    </table>
+</body>
+
+</html>
